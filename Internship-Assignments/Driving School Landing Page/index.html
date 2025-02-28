@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚗 Mulik Motor Driving School</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">🚗 Mulik Motor Driving School</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero py-5" id="home">
+        <div class="container text-center">
+            <h1>Become a Confident Driver 🛣️</h1>
+            <p>Learn with certified instructors in modern vehicles</p>
+            <a href="#courses" class="btn btn-primary btn-lg mt-3">📅 Book Lesson Now</a>
+            <a href="#contact" class="btn btn-secondary btn-lg mt-3">📞 Call Instructor</a> <!-- Use Bootstrap button styles -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="feature-card text-center p-3">
+                        <i class="fas fa-car fa-3x mb-2"></i>
+                        <h3>Beginner Lessons</h3>
+                        <p>Start from scratch with basic vehicle control</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="feature-card text-center p-3">
+                        <i class="fas fa-highway fa-3x mb-2"></i>
+                        <h3>Highway Driving</h3>
+                        <p>Master high-speed road navigation</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="feature-card text-center p-3">
+                        <i class="fas fa-night fa-3x mb-2"></i>
+                        <h3>Night Driving</h3>
+                        <p>Learn safe nighttime driving techniques</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery py-5" id="gallery">
+      <div class="container">
+        <h2 class="text-center mb-4">Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-slide">
+                <img src="https://images.unsplash.com/photo-1542228262-3d663b306a53?auto=format&fit=crop&w=1920&q=80"
+                    class="gallery-image active" alt="Driving lesson">
+                <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1920&q=80"
+                    class="gallery-image" alt="Scenic drive">
+                <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="gallery-image" alt="Car on highway">
+            </div>
+            <div class="gallery-controls">
+                <button class="gallery-nav-btn prev-btn">❮</button>
+                <button class="gallery-nav-btn next-btn">❯</button>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Contact Form -->
+    <section class="contact-form py-5" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-4">Get Started Today</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="inquiryForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Preferred Course</label>
+                            <select class="form-control" id="course" required>
+                                <option value="">Select Course</option>
+                                <option>Beginner Package</option>
+                                <option>Advanced Package</option>
+                                <option>Refresher Course</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">📨 Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2023 Mulik Motor Driving School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+
+</html>

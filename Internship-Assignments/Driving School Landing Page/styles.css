@@ -1,0 +1,140 @@
+/* styles.css */
+
+:root {
+    --primary: #007bff; /* Bootstrap primary color */
+    --secondary: #6c757d; /* Bootstrap secondary color */
+    --accent: #dc3545; /* Bootstrap danger color */
+    --dark: #343a40; /* Bootstrap dark color */
+    --light: #f8f9fa; /* Bootstrap light color */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--light) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem; 
+}
+
+/* Features Section */
+.features {
+    background-color: var(--light);
+    padding: 2rem 0;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: var(--light);
+    padding: 2rem 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Enhanced Gallery */
+.gallery-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Adjust the height */
+    margin: 0 auto;  /* Center the gallery */
+    max-width: 800px; /* Adjust the max width */
+    border-radius: 0.5rem;
+}
+
+.gallery-slide {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.gallery-image {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-image.active {
+    opacity: 1;
+}
+
+.gallery-controls {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10; 
+}
+
+.gallery-nav-btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem; 
+    }
+
+    .hero h1 {
+        font-size: 2rem; 
+    }
+
+    .gallery-container {
+      height: 300px;
+    }
+    .navbar-brand {
+    font-size: 1rem; 
+  }
+
+}
