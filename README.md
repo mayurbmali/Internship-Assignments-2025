@@ -1,2 +1,2 @@
 # Internship-Assignments-2025
-This is a internship progress tracker repository
+This is an internship progress tracker repository
